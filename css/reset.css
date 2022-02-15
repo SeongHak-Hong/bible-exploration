@@ -1,0 +1,53 @@
+/* display */
+.flex {display:flex;}
+.block {display:block;}
+.inline-block {display:inline-block;}
+.inline {display: inline;}
+.none {display: none;}
+
+/* position */
+.relative {position: relative;}
+.absolute {position: absolute;}
+.fixed {position: fixed;}
+
+/* text */
+.text-indent-9999 {text-indent: -9999em;}
+.text-align-center {text-align: center;}
+.text-align-jutify {text-align: justify;}
+.ellipsis {text-overflow: ellipsis;}
+.white-space-nowrap {white-space: nowrap;}
+
+/* overfloww */
+.hidden {overflow: hidden;}
+
+/* flex */
+.space-between {justify-content: space-between;}
+.justify-content-center {justify-content: center;}
+.justify-content-end {justify-content: end;}
+.justify-self-center {justify-self: center;}
+.flex-direction-column {flex-direction: column;}
+.align-items-end {align-items: flex-end;}
+.align-items-center {align-items: center;}
+.align-self-start {align-self: flex-start;}
+.flex-nowrap {flex-wrap: nowrap;}
+.flex-wrap {flex-wrap: wrap;}
+
+/* box-sizing */
+.border-box {box-sizing: border-box;}
+
+
+
+
+* {
+  padding:0;
+  margin:0;
+}
+body {
+  overflow-x: hidden;
+}
+
+/* 섹션 */
+section {
+  width:100vw;
+  height:100vh;
+}

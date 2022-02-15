@@ -1,0 +1,47 @@
+/* ***홈 섹션*** */
+#home {
+  background-color:aliceblue;
+}
+#home h2 {
+  font-size: 8rem;
+  text-align: center;
+}
+
+
+/* ***안내문 섹션*** */
+#notice {
+  background-color:bisque;
+  width:200vw;
+}
+
+
+/* ***안내문 섹션*** */
+#ani {
+  background-color:cadetblue;
+}
+
+
+
+/* ***초대장 섹션 */
+#invite {
+  background-color: cornflowerblue;
+}
+
+
+
+
+/* 메뉴 */
+#menu {
+  bottom:2rem;
+  left:50%;
+  width:40rem;
+  height:5rem;
+  transform: translateX(-50%);
+}
+#menu div {
+  width:5rem;
+  height:5rem;
+  background-color: aqua;
+  border-radius: 50%;
+  cursor: pointer;
+}
