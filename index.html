@@ -4,40 +4,109 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>신나는 성경탐험</title>
   <link href="./css/reset.css" rel="stylesheet">
   <link href="./css/index.css" rel="stylesheet">
   <script defer src="./js/index.js"></script>
 </head>
 <body>
-  <!-- ***홈*** -->
-  <section id="home" class="flex justify-content-center align-items-center">
-    <h2>신나는<br>신약성경탐험</h2>
+
+  <div id="logo" class="fixed">신탄진침례교회 유초등부</div>
+
+  <!-- ***홈 -->
+  <section id="home" class="flex relative justify-content-center">
+    <div id="title-wrap" class="flex flex-direction-column align-items-center">
+      <h2 class="white-space-nowrap">
+        <span>신</span>
+        <span>나</span>
+        <span>는</span>
+        <span>성</span>
+        <span>경</span>
+        <span>탐</span>
+        <span>험</span>
+      </h2>
+      <p>Let's Go! 신약을 탐험해요</p>
+    </div>
   </section>
 
   <!-- ***안내문 -->
   <section id="notice" class="flex justify-content-center align-items-center">
+    <h2 class="text-indent-9999">notice</h2>
+    <div id="part1" class="flex align-items-center flex-direction-column">
+      <h2>ZOOM으로 예배드려요</h2>
+      <p>줌 설치 및 사용 방법은 아래의 QR코드를 스캔해주세요.</p>
+      <div id="monitor" class="relative">
+        <img src="./img/tablet.png" alt="monitor">
+        <div id="qr" class="absolute">
+          <img src="./img/zoom_qr.png" alt="QR">
+        </div>
+      </div>
+      
+    </div>
+    <div id="part2">
+
+    </div>
+    
     
   </section>
 
   <!-- ***애니메이션 -->
   <section id="ani" class="flex justify-content-center align-items-center">
-    
+    <h2>유초등부 선생님들이<br>직접 더빙한 애니메이션!<br>coming soon...</h2>
   </section>
 
   <!-- ***초대장 -->
-  <section id="invite">
+  <section id="invite" class="flex flex-direction-column align-items-center">
+    <h2>성경탐험에 초대 받았습니다</h2>
+    <div id="letter" class="relative">
+      <div class="absolute">
+        <img src="./img/letter_open_1.png" alt="letter_1">
+      </div>
+      <div class="absolute">
+        <img src="./img/letter_open_2.png" alt="letter_1">
+      </div>
+      <div class="absolute">
+        <img src="./img/letter_open_3.png" alt="letter_1">
+      </div>
+    </div>
+  </section>
 
+
+  <!-- ***문의 -->
+  <section id="contact" class="flex align-items-center flex-direction-column">
+    <h2>궁금하신 사항은 연락주세요</h2>
+    <p>담임교사 및 아래 기재된 담당자에게 연락주시면 감사합니다.</p>
+    <div id="person-in-charge" class="flex">
+      <div class="flex flex-direction-column align-items-center"> <!-- 전도사님 정보 -->
+        <div> <!-- 사진 -->
+
+        </div>
+        <div class="flex flex-direction-column align-items-center"> <!-- 정보, 연락처 -->
+          <strong>정일옥 담당목사</strong>
+          <p>010-2771-6811</p>
+        </div> 
+      </div>
+      <div class="flex flex-direction-column align-items-center"> <!-- 부장집사님 정보 -->
+        <div> <!-- 사진 -->
+
+        </div>
+        <div class="flex flex-direction-column align-items-center"> <!-- 정보, 연락처 -->
+          <strong>이명애 부장집사</strong>
+          <p>010-8830-1922</p>
+        </div>
+      </div>
+    </div>
   </section>
 
 
 
   <!-- ***메뉴*** -->
-  <div id="menu" class="fixed flex space-between">
-    <div id="home-btn" class="hidden"></div> <!-- 홈 -->
-    <div id="notice-btn" class="hidden"></div> <!-- 안내문 -->
-    <div id="ani-btn" class="hidden"></div> <!-- 애니메이션 -->
-    <div id="invite-btn" class="hidden"></div> <!-- 초대장 -->
+  <div id="menu" class="fixed flex flex-direction-column space-between">
+    <div id="home-btn" class="hidden">홈</div> <!-- 홈 -->
+    <div id="notice-btn" class="hidden">안내</div> <!-- 안내문 -->
+    <div id="ani-btn" class="hidden">영상</div> <!-- 애니메이션 -->
+    <div id="letter-btn" class="hidden">초대</div> <!-- 초대장 -->
+    <div id="contact-btn" class="hidden">문의</div> <!-- 문의 -->
   </div>
 </body>
 </html>

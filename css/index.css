@@ -1,21 +1,72 @@
-/* ***홈 섹션*** */
+/* ***로고 */
+#logo {
+  left:1rem;
+  top:.5rem;
+  font-family: 'Dongle', sans-serif;
+  font-size:2rem;
+  pointer-events: none;
+  z-index: 100;
+}
+
+
+/* ***홈 섹션 */
 #home {
   background-color:aliceblue;
 }
-#home h2 {
-  font-size: 8rem;
+/* 제목 */
+#title-wrap {
+  margin-top:10rem;
+}
+#title-wrap h2 {
+  font-size: 6rem;
   text-align: center;
+  letter-spacing: -.15em;
+  z-index: 1;
+  margin-top:4rem;
+}
+#title-wrap h2 span:nth-child(4) {
+  margin-left:1.5rem;
+}
+#title-wrap p {
+  font-size: 2rem;
 }
 
 
-/* ***안내문 섹션*** */
+/* ***안내문 섹션 */
 #notice {
-  background-color:bisque;
+  background-color:rgb(255, 240, 217);
   width:200vw;
 }
+#part1, #part2 {
+  width:100vw;
+  height:100vh;
+}
+/* 태블릿 */
+#monitor {
+  width:50rem;
+  transform: translateY(1rem);
+}
+#monitor img {
+  width:100%;
+  pointer-events: none;
+}
+/* qr코드 */
+#qr {
+  left:5rem;
+  bottom:5rem;
+  animation: qr .8s infinite alternate;
+}
+@keyframes qr {
+  0% {
+
+  }
+  100% {
+    bottom: 6rem;
+  }
+}
 
 
-/* ***안내문 섹션*** */
+/* ***애니 섹션 */
 #ani {
   background-color:cadetblue;
 }
@@ -24,24 +75,183 @@
 
 /* ***초대장 섹션 */
 #invite {
-  background-color: cornflowerblue;
+  background-color: #b6becf;
 }
-
-
-
-
-/* 메뉴 */
-#menu {
-  bottom:2rem;
+#letter {
+  width:100%;
+  height:100%;
+}
+/* 편지 박스 */
+#letter div {
+  width: 37.5rem;
   left:50%;
-  width:40rem;
-  height:5rem;
-  transform: translateX(-50%);
+  top:50%;
+  transform: translate(-50%,-50%);
 }
-#menu div {
-  width:5rem;
-  height:5rem;
-  background-color: aqua;
+/* 편지 이미지 */
+#letter div img {
+  width:100%;
+  pointer-events: none;
+}
+#letter div:nth-child(3) {
+  pointer-events: none;
+}
+#letter div:nth-child(2) img {
+  animation: letter .5s infinite alternate;
+}
+@keyframes letter {
+  0% {
+  }
+  100% {
+    transform: translateY(1rem);
+  }
+}
+
+
+
+
+
+/* ***문의 섹션 */
+#contact {
+  background-color: lightgoldenrodyellow;
+}
+#person-in-charge {
+  width:40rem;
+  height:max-content;
+  /* background-color: aqua; */
+  margin-top:2rem;
+}
+/*  */
+#person-in-charge > div {
+  width:50%;
+}
+/* 담당자 사진 */
+#person-in-charge div div:nth-child(1) {
+  width:16rem;
+  height:16rem;
+  border-radius: 50%;
+  background-color: rgb(2, 77, 77);
+}
+/* 담당자 정보 박스 */
+#person-in-charge div div:nth-child(2) {
+  width:80%;
+  height:18rem;
+  margin-top:2rem;
+  background-color: rgb(3, 126, 126);
+  border-radius: 1.5rem;
+}
+/* 담당자 이름 */
+#person-in-charge div div:nth-child(2) strong {
+  margin-top:.875rem;
+  font-size: 1.75rem;
+  font-family: 'Jua', sans-serif;
+  font-weight: 400;
+}
+/* 담당자 연락처 */
+#person-in-charge div div:nth-child(2) p {
+  font-size:1.25rem;
+} 
+
+
+
+
+
+/* ***메뉴 */
+#menu {
+  top:50%;
+  right:2%;
+  transform: translate(0, -50%);
+  width:3.75rem;
+  height:24rem;
+  z-index: 100;
+}
+/* 버튼 */
+#menu > div {
+  width:3.75rem;
+  height:3.75rem;
+  line-height: 3.75rem;
   border-radius: 50%;
   cursor: pointer;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, .18);
+  transition: .3s;
+  text-indent: 4.75rem;
+  font-family: 'Jua', sans-serif;
+  color:#fafafa;
+  background-color: #8ec85b;
+}
+/* 버튼 호버 */
+#menu > div:hover {
+  width:6.2rem;
+  border-radius: 3.75rem;
+  transform: translateX(-2.5rem);
+  text-indent: 3.5rem;
+}
+#menu > div:nth-child(1):hover {
+  text-indent: 4rem;
+}
+/* 버튼 아이콘 이미지 */
+#menu div div {
+  width:3.75rem;
+  height:3.75rem;
+}
+/* 홈 버튼 */
+#home-btn {
+  background:url(../img/icon/icon_home.png) no-repeat 0 50% / 3.75rem;
+}
+/* 안내 버튼 */
+#notice-btn {
+  background: url(../img/icon/icon_notice.png) no-repeat 0 50% / 3.75rem;;
+}
+/* 애니 버튼 */
+#ani-btn {
+  background: url(../img/icon/icon_ani.png) no-repeat 0 50% / 3.75rem;;
+}
+/* 초대 버튼 */
+#letter-btn {
+  background: url(../img/icon/icon_letter.png) no-repeat 0 50% / 3.75rem;;
+}
+/* 문의 버튼 */
+#contact-btn {
+  background: url(../img/icon/icon_contact.png) no-repeat 0 50% / 3.75rem;;
+}
+
+
+/* 미디어쿼리 */
+@media screen and (max-width:1024px) {
+  /* 메뉴 */
+  #menu {
+    flex-direction: row;
+    top:94%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    height:3.75rem;
+    width:24rem;
+    z-index: 100;
+  }
+  /* 메뉴 호버 */
+  #menu > div:hover {
+    width:3.75rem;
+    transform: translateX(0);
+    text-indent: 5rem;
+  }
+
+  /* ***안내섹션*/
+  /* 태블릿 */
+  #monitor {
+    width:34rem;
+    transform: translateY(15%);
+  }
+  /* qr코드 */
+  #qr {
+    left:3rem;
+    bottom:3rem;
+    animation: qr .8s infinite alternate;
+  }
+  @keyframes qr {
+    0% {
+    }
+    100% {
+      bottom: 4rem;
+    }
+  }
 }
