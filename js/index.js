@@ -2,9 +2,8 @@ const body = document.querySelector('body');
 const menuLi = document.querySelectorAll('#menu div');
 const sec = document.querySelectorAll('section');
 const getSectionHeight = sec[0].offsetHeight;
-// console.log(getSectionHeight);
+console.log(getSectionHeight);
 // console.dir(menuLi[0]);
-let order = 0;
 
 // ***메뉴버튼 클릭시 해당 섹션으로 이동
 for (i = 0; i < menuLi.length; i++) {
