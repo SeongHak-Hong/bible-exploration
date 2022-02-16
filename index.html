@@ -8,6 +8,7 @@
   <link href="./css/index.css" rel="stylesheet">
   <link href="./css/reset.css" rel="stylesheet">
   <script src="./js/index.js"></script>
+  <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
 </head>
 <body>
 
@@ -25,7 +26,8 @@
         <span>탐</span>
         <span>험</span>
       </h2>
-      <p>Let's Go! 신약을 탐험해요</p>
+      <p>2022.2.26(토) ~ 2.27(일)</p>
+      <p>Let's go! 신약 탐험을 해요</p>
     </div>
   </section>
 
@@ -51,13 +53,14 @@
   </section>
 
   <!-- ***애니메이션 -->
-  <section id="ani" class="flex justify-content-center align-items-center">
-    <h2>유초등부 선생님들이<br>직접 더빙한 애니메이션!<br>coming soon...</h2>
+  <section id="ani" class="flex flex-direction-column align-items-center">
+    <h2>유초등부 선생님들이 직접 더빙한 애니메이션!</h2>
+    <p>coming soon...</p>
   </section>
 
   <!-- ***초대장 -->
   <section id="invite" class="flex flex-direction-column align-items-center">
-    <h2>성경탐험에 초대 받았습니다</h2>
+    <h2>성경탐험에 초대합니다</h2>
     <div id="letter" class="relative">
       <div class="absolute">
         <img src="./img/letter_open_1.png" alt="letter_1">
@@ -68,6 +71,13 @@
       <div class="absolute">
         <img src="./img/letter_open_3.png" alt="letter_1">
       </div>
+      <div class="flex flex-direction-column absolute align-items-center text-align-center">
+        <span>지금 유초등부에 다니는 중 인가요?</span>
+        <div class="flex justify-content-center">
+          <p>처음 왔어요</p>
+          <p>다니고 있어요</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -75,26 +85,39 @@
   <!-- ***문의 -->
   <section id="contact" class="flex align-items-center flex-direction-column">
     <h2>궁금하신 사항은 연락주세요</h2>
-    <p>담임교사 및 아래 기재된 담당자에게 연락주시면 감사합니다.</p>
-    <div id="person-in-charge" class="flex">
-      <div class="flex flex-direction-column align-items-center"> <!-- 전도사님 정보 -->
-        <div> <!-- 사진 -->
+    <p class="text-align-center">오른쪽의 네이버밴드 아이콘을 누르면 유초등부의 다양한 소식을 볼 수 있어요!</p>
+    <!-- 담당자 -->
+    <div id="person-in-charge" class="flex space-between">
+      <div class="flex align-items-center"> <!-- 전도사님 정보 -->
+        <div class="relative"> <!-- 사진 -->
 
         </div>
-        <div class="flex flex-direction-column align-items-center"> <!-- 정보, 연락처 -->
-          <strong>정일옥 담당목사</strong>
+        <div class="flex flex-direction-column align-items-center justify-content-center"> <!-- 정보, 연락처 -->
+          <strong class="text-align-center">정일옥 담당목사</strong>
           <p>010-2771-6811</p>
         </div> 
       </div>
-      <div class="flex flex-direction-column align-items-center"> <!-- 부장집사님 정보 -->
-        <div> <!-- 사진 -->
-
+      <div class="flex align-items-center"> <!-- 부장집사님 정보 -->
+        <div class="relative"> <!-- 사진 -->
+          <img src="./img/lee.png" alt="lee">
         </div>
-        <div class="flex flex-direction-column align-items-center"> <!-- 정보, 연락처 -->
-          <strong>이명애 부장집사</strong>
+        <div class="flex flex-direction-column align-items-center justify-content-center"> <!-- 정보, 연락처 -->
+          <strong class="text-align-center">이명애 부장집사</strong>
           <p>010-8830-1922</p>
         </div>
       </div>
+    </div>
+    <!-- 카카오맵 -->
+    <div id="map">
+      <div id="daumRoughmapContainer1645021527767" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+      <script charset="UTF-8">
+        new daum.roughmap.Lander({
+          "timestamp" : "1645021527767",
+          "key" : "296j6",
+          "mapWidth" : "600",
+          "mapHeight" : "360"
+        }).render();
+      </script>
     </div>
   </section>
 
@@ -107,6 +130,7 @@
     <div id="ani-btn" class="hidden">영상</div> <!-- 애니메이션 -->
     <div id="letter-btn" class="hidden">초대</div> <!-- 초대장 -->
     <div id="contact-btn" class="hidden">문의</div> <!-- 문의 -->
+    <a id="band-btn" class="hidden" href="https://band.us/n/a6a765h5j10ce" target="_blank">밴드</a> <!-- 네이버밴드 -->
   </div>
 </body>
 </html>

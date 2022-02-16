@@ -11,12 +11,13 @@
 
 /* ***홈 섹션 */
 #home {
-  background-color:aliceblue;
+  background-color:#fafafa;
 }
 /* 제목 */
 #title-wrap {
   margin-top:10rem;
 }
+/* 주제 */
 #title-wrap h2 {
   font-size: 6rem;
   text-align: center;
@@ -27,14 +28,20 @@
 #title-wrap h2 span:nth-child(4) {
   margin-left:1.5rem;
 }
-#title-wrap p {
+/* 부제 */
+#title-wrap p:nth-of-type(1) {
   font-size: 2rem;
+}
+/* 날짜 */
+#title-wrap p:nth-of-type(2) {
+  font-size: 1.375rem;
+  margin-top:.5rem;
 }
 
 
 /* ***안내문 섹션 */
 #notice {
-  background-color:rgb(255, 240, 217);
+  background-color: #D5B586;
   width:200vw;
 }
 #part1, #part2 {
@@ -68,7 +75,7 @@
 
 /* ***애니 섹션 */
 #ani {
-  background-color:cadetblue;
+  background-color: #b6cfb6;
 }
 
 
@@ -82,7 +89,7 @@
   height:100%;
 }
 /* 편지 박스 */
-#letter div {
+#letter > div {
   width: 37.5rem;
   left:50%;
   top:50%;
@@ -106,6 +113,23 @@
     transform: translateY(1rem);
   }
 }
+/* 편지 클릭 텍스트 */
+#letter div:nth-child(4) {
+  top:25%;
+}
+#letter div:nth-child(4) div {
+  width:100%;
+}
+#letter div:nth-child(4) div p {
+  margin: 1rem .5rem 0;
+  width:8rem;
+  height:2rem;
+  line-height: 2rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  background-color: #b6becf;
+  font-weight: 400;
+}
 
 
 
@@ -113,45 +137,57 @@
 
 /* ***문의 섹션 */
 #contact {
-  background-color: lightgoldenrodyellow;
+  background-color: #C1D7DB;
 }
+/* 제목 */
+#contact h2 {
+  margin-top:5%;
+}
+/* 담당자 */
 #person-in-charge {
-  width:40rem;
+  width:48rem;
   height:max-content;
-  /* background-color: aqua; */
-  margin-top:2rem;
-}
-/*  */
-#person-in-charge > div {
-  width:50%;
+  margin-top:3rem;
 }
 /* 담당자 사진 */
 #person-in-charge div div:nth-child(1) {
-  width:16rem;
-  height:16rem;
+  width:8rem;
+  height:8rem;
   border-radius: 50%;
-  background-color: rgb(2, 77, 77);
+  background-color: #ABBEC2;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, .22);
+  border:.25rem solid #fafafa;
+  overflow: hidden;
+  z-index: 1;
+}
+#person-in-charge div div:nth-child(1) img {
+  width:100%;
 }
 /* 담당자 정보 박스 */
 #person-in-charge div div:nth-child(2) {
-  width:80%;
-  height:18rem;
-  margin-top:2rem;
-  background-color: rgb(3, 126, 126);
-  border-radius: 1.5rem;
+  height:5rem;
+  border-radius: 5rem;
+  background-color: #ABBEC2;
+  transform: translateX(-3rem);
+  padding-left: 2rem;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, .22);
 }
 /* 담당자 이름 */
 #person-in-charge div div:nth-child(2) strong {
-  margin-top:.875rem;
-  font-size: 1.75rem;
+  width:13rem;
+  font-size: 1.5rem;
   font-family: 'Jua', sans-serif;
   font-weight: 400;
+  border-radius: 1.25rem;
 }
 /* 담당자 연락처 */
 #person-in-charge div div:nth-child(2) p {
-  font-size:1.25rem;
-} 
-
+  font-size:1.125rem;
+}
+/* 오시는 길(맵) */
+#map {
+  margin-top:4rem;
+}
 
 
 
@@ -162,25 +198,25 @@
   right:2%;
   transform: translate(0, -50%);
   width:3.75rem;
-  height:24rem;
+  height:30rem;
   z-index: 100;
 }
 /* 버튼 */
-#menu > div {
+#menu > div, #menu > a {
   width:3.75rem;
   height:3.75rem;
   line-height: 3.75rem;
   border-radius: 50%;
   cursor: pointer;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, .18);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, .22), -4px -4px 4px rgba(255, 255, 255, .22);
   transition: .3s;
   text-indent: 4.75rem;
   font-family: 'Jua', sans-serif;
   color:#fafafa;
-  background-color: #8ec85b;
+  text-decoration: none;
 }
 /* 버튼 호버 */
-#menu > div:hover {
+#menu > div:hover, #menu > a:hover {
   width:6.2rem;
   border-radius: 3.75rem;
   transform: translateX(-2.5rem);
@@ -214,6 +250,10 @@
 #contact-btn {
   background: url(../img/icon/icon_contact.png) no-repeat 0 50% / 3.75rem;;
 }
+/* 밴드 버튼 */
+#band-btn {
+  background: url(../img/icon/icon_band.png) no-repeat 0 50% / 3.75rem;;
+}
 
 
 /* 미디어쿼리 */
@@ -225,11 +265,15 @@
     left:50%;
     transform: translate(-50%, -50%);
     height:3.75rem;
-    width:24rem;
+    width:28rem;
     z-index: 100;
+    
+  }
+  #menu > div, #menu > a {
+    background-color: rgb(28, 141, 255);
   }
   /* 메뉴 호버 */
-  #menu > div:hover {
+  #menu > div:hover, #menu > a:hover {
     width:3.75rem;
     transform: translateX(0);
     text-indent: 5rem;
