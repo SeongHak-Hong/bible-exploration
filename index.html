@@ -7,7 +7,8 @@
   <title>신나는 성경탐험</title>
   <link href="./css/index.css" rel="stylesheet">
   <link href="./css/reset.css" rel="stylesheet">
-  <script src="./js/index.js"></script>
+  <script src="./js/index.js" defer></script>
+  <script src="./js/slide.js" defer></script>
   <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
 </head>
 <body>
@@ -27,6 +28,7 @@
         <span>험</span>
       </h2>
       <p>2022.2.26(토) ~ 2.27(일)</p>
+      <p class="text-align-center">그 세대의 사람도 다 그 조상들에게로 돌아갔고 그 후에 일어난 다른 세대는 여호와를 알지 못하며<br> 여호와께서 이스라엘을 위하여 행하신 일도 알지 못하였더라 (사사기 2:10)</p>
       <!-- 햇빛 -->
       <div id="sun" class="absolute">
         <div id="ray_box">
@@ -78,50 +80,90 @@
 
 
   <!-- ***안내문 -->
-  <section id="notice" class="flex justify-content-center align-items-center hidden">
+  <section id="notice" class="flex justify-content-center align-items-center relative">
     <h2 class="text-indent-9999">성경학교 안내</h2>
-    <!-- <div id="part1" class="flex align-items-center flex-direction-column">
-      <h2>ZOOM으로 예배드려요</h2>
-      <p>소통을 위해 카메라와 마이크를 꼭 켜주세요!<br>
-        줌 설치 및 사용 방법은 아래의 QR코드를 클릭 혹은 스캔해주세요.</p>
-      <div id="monitor" class="relative">
-        <img src="./img/tablet.png" alt="monitor">
-        <a id="qr" class="absolute" href="https://www.youtube.com/watch?v=LwsbBgCzYJM&t=1s" target="_blank">
-          <img src="./img/zoom_qr.png" alt="QR">
-        </a>
-      </div> -->
+    <div id="slide-ul" class="flex absolute">
+      <div id="part1" class="flex align-items-center flex-direction-column slide-content">
+        <h2>ZOOM으로 예배드려요</h2>
+        <p>소통을 위해 카메라와 마이크를 꼭 켜주세요!<br>
+          줌 설치 및 사용 방법은 아래의 QR코드를 클릭 혹은 스캔해주세요.</p>
+        <div id="monitor" class="relative">
+          <img src="./img/tablet.png" alt="monitor">
+          <a id="qr" class="absolute" href="https://www.youtube.com/watch?v=LwsbBgCzYJM&t=1s" target="_blank">
+            <img src="./img/zoom_qr.png" alt="QR">
+          </a>
+        </div>
+      </div>
+      <div id="part2" class="flex align-items-center flex-direction-column">
+        <h2>주일은 오프라인 예배</h2>
+        <p>주일 예배는 오프라인 예배로 예정이지만, 상황에 따라 온라인으로 변경될 수 있어요.<br>
+          오프라인 예배시 차량운행은 기존과 같아요.</p>
+        <div id="offline" class="relative">
+        </div>
+      </div>
+      <div id="part3" class="flex align-items-center flex-direction-column">
+        <h2>시상 안내</h2>
+        <p>성경탐험에 온라인으로 끝까지 열심히 참여한 탐험대원에게는 출석 시상을 해요.<br>성경퀴즈 대회와 영상 소감문을 시상하여 소정의 선물을 드려요!</p>
+        <div id="award" class="relative">
+        </div>
+      </div>
+      <div id="part4" class="flex align-items-center flex-direction-column">
+        <h2>휴식 시간</h2>
+        <p>각 프로그램 간 5분의 휴식이 있어요.<br>쉴 수 있는 시간을 잘 확인하고, 이후 프로그램에 참여하도록 선생님의 안내를 잘 확인해주세요.</p>
+        <div id="rest" class="relative">
+        </div>
+      </div>
+      <div id="part5" class="flex align-items-center flex-direction-column">
+        <h2>시간표</h2>
+        <p>프로그램이 끝날 때마다 5분의 휴식이 있어요.<br>쉴 수 있는 시간을 잘 확인하고, 선생님의 안내를 따라주세요.</p>
+        <div id="time-table" class="relative">
+        </div>
+      </div>
     </div>
-    <div id="part2">
-
+    <div id="slide-btn" class="flex absolute space-between">
+      <div id="prev">
+        <img src="./img/icon/chevron_left.png" alt="prev">
+      </div>
+      <div id="next">
+        <img src="./img/icon/chevron_right.png" alt="next">
+      </div>
     </div>
-    
-    
   </section>
+
+
+
 
   <!-- ***애니메이션 -->
   <section id="ani" class="flex flex-direction-column align-items-center">
-    <h2>유초등부 선생님들이 직접 더빙한 애니메이션!</h2>
-    <p>coming soon...</p>
+    <h2>신나는 성경학교 소개영상</h2>
+    <p>유초등부 선생님들이 직접 더빙한 성경 드라마는 coming soon...</p>
+    <video src="./video/22winter_churchschool.mp4" controls></video>
   </section>
 
   <!-- ***초대장 -->
   <section id="invite" class="flex flex-direction-column align-items-center relative">
     <h2>성경탐험에 초대합니다</h2>
     <div id="letter" class="relative">
-      <div class="absolute">
+      <!-- 편지지 맨뒤 -->
+      <div id="letter1" class="absolute">
         <img src="./img/letter_open_1.png" alt="letter_1">
       </div>
-      <div class="absolute">
-        <img src="./img/letter_open_2.png" alt="letter_1">
+      <div id="letter2" class="absolute">
+        <img src="./img/letter_open_2.png" alt="letter_2">
       </div>
-      <div class="absolute">
-        <img src="./img/letter_open_3.png" alt="letter_1">
+      <div id="letter3" class="absolute">
+        <img src="./img/letter_open_3.png" alt="letter_3">
       </div>
-      <div class="flex flex-direction-column absolute align-items-center text-align-center">
-        <span>지금 유초등부에 다니는 중 인가요?</span>
-        <div class="flex justify-content-center">
-          <p>처음 왔어요</p>
-          <p>다니고 있어요</p>
+      <div id="letter-paper" class="absolute">
+        <img src="./img/letter_paper_1.png" alt="letter-paper">
+        <div id="close-btn" class="absolute">
+          <img src="./img/icon/close_btn.png" alt="close-btn">
+        </div>
+      </div>
+      <div id="letter-text" class="flex flex-direction-column align-items-center text-align-center absolute">
+        <span>초대장을 열어 보세요.</span>
+        <div id="more-btn" class="flex justify-content-center">
+          <p>열어 보기</p>
         </div>
       </div>
     </div>

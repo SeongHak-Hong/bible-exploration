@@ -28,14 +28,14 @@
 #title-wrap h2 span:nth-child(4) {
   margin-left:1.5rem;
 }
-/* 부제 */
+/* 날짜 */
 #title-wrap p:nth-of-type(1) {
   font-size: 2rem;
 }
-/* 날짜 */
+/* 말씀 */
 #title-wrap p:nth-of-type(2) {
-  font-size: 1.375rem;
-  margin-top:.5rem;
+  font-size: 1rem;
+  margin-top:.875rem;
 }
 /* 햇빛 */
 #sun { 
@@ -263,7 +263,6 @@
   -webkit-border-radius: 200px;
   -moz-border-radius: 200px;
   border-radius: 200px;
-
   width: 180px;
   height: 180px;
   right: 50px;
@@ -279,19 +278,49 @@
 
 /* ***안내문 섹션 */
 #notice {
-  background-color: #ffd9a1;
   width:max-content
 }
-#part1, #part2 {
+/* 슬라이드 ul */
+#slide-ul {
+  background-color: #ffd9a1;
+}
+/* 슬라이드 버튼 */
+#slide-btn {
+  width:50vw;
+  height:100vh;
+  left:50%;
+  top:50%;
+  transform: translate(50%, 5%);
+  z-index: 10;
+}
+#next, #prev {
+  width:3rem;
+  height:3rem;
+  border-radius: 50%;
+  background-color: rgba(53, 37, 15,.7);
+  transition: .3s;
+  cursor: pointer;
+}
+#next:hover, #prev:hover {
+  background-color: rgba(53, 37, 15,1);
+}
+#next img, #prev img {
+  width:100%;
+  pointer-events: none;
+}
+#next img {
+  transform: translateX(2px);
+}
+#prev img {
+  transform: translateX(-2px);
+}
+/* 슬라이드 크기 */
+#part1, #part2, #part3, #part4, #part5 {
   width:100vw;
   height:100vh;
 }
-/* 파트1 주제 */
-#part1 h2 {
-  margin-top:6%;
-}
-/* 파트2 부제 */
-#part1 p {
+/* 파트별 부제 */
+#part1 p, #part2 p, #part3 p, #part4 p, #part5 p {
   text-align: center;
 }
 /* 파트1 태블릿 */
@@ -317,6 +346,13 @@
     bottom: 6rem;
   }
 }
+/* 파트별 이미지 박스 */
+#offline, #award, #rest, #time-table {
+  width:48rem;
+  height:35rem;
+  background-color: #fafafa;
+  margin-top:2.5rem;
+}
 
 
 
@@ -325,6 +361,10 @@
 /* ***애니 섹션 */
 #ani {
   background-color: #FFE3BA;
+}
+#ani video {
+  width:60rem;
+  margin-top:3rem;
 }
 
 
@@ -345,14 +385,15 @@
   transform: translate(-50%,-50%);
 }
 /* 편지 이미지 */
-#letter div img {
+#letter1 img, #letter2 img, #letter3 img, #letter-paper img {
   width:100%;
   pointer-events: none;
 }
 #letter div:nth-child(3) {
   pointer-events: none;
 }
-#letter div:nth-child(2) img {
+/* 편지지 애니메이션(반복) */
+.letter2-ani {
   animation: letter .5s infinite alternate;
 }
 @keyframes letter {
@@ -362,28 +403,55 @@
     transform: translateY(1rem);
   }
 }
+/* 편지지 애니메이션(열어보기 클릭시) */
+.letter2-open {
+  animation: open .8s;
+}
+@keyframes open {
+  0% {
+
+  }
+  100% {
+    transform: translateY(-3rem);
+  }
+}
 /* 편지 클릭 텍스트 */
-#letter div:nth-child(4) {
+#letter div:nth-child(5) {
   top:25%;
 }
-#letter div:nth-child(4) div {
+#letter-text div {
   width:100%;
 }
-#letter div:nth-child(4) div p {
+#letter-text div p {
   margin: 1rem .5rem 0;
   width:8rem;
   height:2rem;
   line-height: 2rem;
   border-radius: 2rem;
   cursor: pointer;
-  background-color: rgba(213, 181, 134, .7);
+  background-color: #d1dced;
   font-weight: 400;
+  transition: .3s;
 }
-#letter div:nth-child(4) div p:hover {
-  background-color: rgba(213, 181, 134, 1);
+#letter-text div p:hover {
+  background-color: #bbcfee;
 }
-
-
+/* 닫기 버튼 */
+#close-btn {
+  right: -1rem;
+  top:2rem;
+  width:2rem;
+  height:2rem;
+  cursor: pointer;
+  
+}
+#close-btn img {
+  width:1.5rem;
+  transition: .3s;
+}
+#close-btn:hover img {
+  transform:rotate(90deg);
+}
 
 
 
