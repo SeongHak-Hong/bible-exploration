@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes"/>
   <title>신나는 성경탐험</title>
   <link href="./css/index.css" rel="stylesheet">
   <link href="./css/reset.css" rel="stylesheet">
@@ -15,8 +15,8 @@
   <div id="logo" class="fixed">신탄진침례교회 유초등부</div>
 
   <!-- ***홈 -->
-  <section id="home" class="flex relative justify-content-center">
-    <div id="title-wrap" class="flex flex-direction-column align-items-center">
+  <section id="home" class="flex justify-content-center align-items-center relative">
+    <div id="title-wrap" class="flex flex-direction-column align-items-center relative">
       <h2 class="white-space-nowrap">
         <span>신</span>
         <span>나</span>
@@ -27,21 +27,68 @@
         <span>험</span>
       </h2>
       <p>2022.2.26(토) ~ 2.27(일)</p>
-      <p>Let's go! 신약 탐험을 해요</p>
+      <!-- 햇빛 -->
+      <div id="sun" class="absolute">
+        <div id="ray_box">
+            <div class="ray ray1"></div>
+            <div class="ray ray2"></div>
+            <div class="ray ray3"></div>
+            <div class="ray ray4"></div>
+            <div class="ray ray5"></div>
+            <div class="ray ray6"></div>
+            <div class="ray ray7"></div>
+            <div class="ray ray8"></div>
+            <div class="ray ray9"></div>
+            <div class="ray ray10"></div>
+        </div>
+      </div>
+    </div>
+    <!-- 구름 -->
+    <div id="background-wrap" class="absolute">
+      <div class="x1">
+          <div class="cloud"></div>
+      </div>
+  
+      <div class="x2">
+          <div class="cloud"></div>
+      </div>
+  
+      <div class="x3">
+          <div class="cloud"></div>
+      </div>
+  
+      <div class="x4">
+          <div class="cloud"></div>
+      </div>
+  
+      <div class="x5">
+          <div class="cloud"></div>
+      </div>
+    </div>
+    <!-- 사람 -->
+    <div id="person1" class="absolute">
+      <img src="./img/person1.png" alt="person1">
+    </div>
+    <div id="person2" class="absolute">
+      <img src="./img/person2.png" alt="person2">
     </div>
   </section>
 
+
+
+
   <!-- ***안내문 -->
   <section id="notice" class="flex justify-content-center align-items-center">
-    <h2 class="text-indent-9999">notice</h2>
+    <h2 class="text-indent-9999">성경학교 안내</h2>
     <div id="part1" class="flex align-items-center flex-direction-column">
       <h2>ZOOM으로 예배드려요</h2>
-      <p>줌 설치 및 사용 방법은 아래의 QR코드를 스캔해주세요.</p>
+      <p>소통을 위해 카메라와 마이크를 꼭 켜주세요!<br>
+        줌 설치 및 사용 방법은 아래의 QR코드를 클릭 혹은 스캔해주세요.</p>
       <div id="monitor" class="relative">
         <img src="./img/tablet.png" alt="monitor">
-        <div id="qr" class="absolute">
+        <a id="qr" class="absolute" href="https://www.youtube.com/watch?v=LwsbBgCzYJM&t=1s" target="_blank">
           <img src="./img/zoom_qr.png" alt="QR">
-        </div>
+        </a>
       </div>
       
     </div>
@@ -59,7 +106,7 @@
   </section>
 
   <!-- ***초대장 -->
-  <section id="invite" class="flex flex-direction-column align-items-center">
+  <section id="invite" class="flex flex-direction-column align-items-center relative">
     <h2>성경탐험에 초대합니다</h2>
     <div id="letter" class="relative">
       <div class="absolute">
@@ -83,21 +130,21 @@
 
 
   <!-- ***문의 -->
-  <section id="contact" class="flex align-items-center flex-direction-column">
+  <section id="contact" class="flex align-items-center flex-direction-column hidden">
     <h2>궁금하신 사항은 연락주세요</h2>
     <p class="text-align-center">오른쪽의 네이버밴드 아이콘을 누르면 유초등부의 다양한 소식을 볼 수 있어요!</p>
     <!-- 담당자 -->
     <div id="person-in-charge" class="flex space-between">
-      <div class="flex align-items-center"> <!-- 전도사님 정보 -->
+      <div class="flex align-items-center justify-content-center"> <!-- 전도사님 정보 -->
         <div class="relative"> <!-- 사진 -->
-
+          <img src="./img/jeong.png" alt="jeong">
         </div>
         <div class="flex flex-direction-column align-items-center justify-content-center"> <!-- 정보, 연락처 -->
           <strong class="text-align-center">정일옥 담당목사</strong>
           <p>010-2771-6811</p>
         </div> 
       </div>
-      <div class="flex align-items-center"> <!-- 부장집사님 정보 -->
+      <div class="flex align-items-center justify-content-center"> <!-- 부장집사님 정보 -->
         <div class="relative"> <!-- 사진 -->
           <img src="./img/lee.png" alt="lee">
         </div>
@@ -132,5 +179,9 @@
     <div id="contact-btn" class="hidden">문의</div> <!-- 문의 -->
     <a id="band-btn" class="hidden" href="https://band.us/n/a6a765h5j10ce" target="_blank">밴드</a> <!-- 네이버밴드 -->
   </div>
+
+
+
+
 </body>
 </html>
