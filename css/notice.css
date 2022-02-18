@@ -6,6 +6,11 @@
 #slide-ul {
   background-color: #ffd9a1;
 }
+/* 슬라이드 크기 */
+#part1, #part2, #part3, #part4, #part5 {
+  width:100vw;
+  height:100vh;
+}
 /* 슬라이드 버튼 */
 #slide-btn {
   width:100vw;
@@ -43,11 +48,10 @@
 #prev img {
   transform: translateX(-2px);
 }
-/* 슬라이드 크기 */
-#part1, #part2, #part3, #part4, #part5 {
-  width:100vw;
-  height:100vh;
-}
+
+
+
+
 /* 파트별 부제 */
 #part1 p, #part2 p, #part3 p, #part4 p, #part5 p {
   text-align: center;
@@ -56,6 +60,7 @@
 #monitor {
   width:50rem;
   transform: translateY(1rem);
+  z-index: 11;
 }
 #monitor img:nth-child(1) {
   width:100%;
