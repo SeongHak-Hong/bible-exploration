@@ -1,0 +1,107 @@
+/* ***문의 섹션 */
+#contact {
+  background-color: #FFE3BA;
+}
+/* 제목 */
+#contact h2 {
+  margin-top:5%;
+}
+/* 담당자 */
+#person-in-charge {
+  width:48rem;
+  height:max-content;
+  margin-top:3rem;
+}
+/* 담당자 사진 */
+#person-in-charge div div:nth-child(1) {
+  width:8rem;
+  height:8rem;
+  border-radius: 50%;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, .22);
+  border:.25rem solid #fafafa;
+  overflow: hidden;
+  z-index: 1;
+}
+#person-in-charge div div:nth-child(1) img {
+  width:100%;
+}
+/* 담당자 정보 박스 */
+#person-in-charge div div:nth-child(2) {
+  height:5rem;
+  border-radius: 5rem;
+  background-color: #f0cd98;
+  transform: translateX(-3rem);
+  padding-left: 2rem;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, .22);
+}
+/* 담당자 이름 */
+#person-in-charge div div:nth-child(2) strong {
+  width:13rem;
+  font-size: 1.5rem;
+  font-family: 'Jua', sans-serif;
+  font-weight: 400;
+  border-radius: 1.25rem;
+}
+/* 담당자 연락처 */
+#person-in-charge div div:nth-child(2) p {
+  font-size:1.125rem;
+}
+/* 오시는 길(맵) */
+#map {
+  margin-top:4rem;
+}
+
+
+@media screen and (max-width:1024px) {
+  /* 담당자 */
+  #person-in-charge {
+    width:40rem;
+    height:max-content;
+    margin-top:3rem;
+  }
+  /* 담당자 사진 */
+  #person-in-charge div div:nth-child(1) {
+    width:6rem;
+    height:6rem;
+  }
+  /* 담당자 정보 박스 */
+  #person-in-charge div div:nth-child(2) {
+    height:4rem;
+  }
+  /* 담당자 이름 */
+  #person-in-charge div div:nth-child(2) strong {
+    width:13rem;
+    font-size: 1.325rem;
+  }
+  /* 담당자 연락처 */
+  #person-in-charge div div:nth-child(2) p {
+    font-size: 1rem;
+    margin-top:0;
+  }
+}
+
+
+@media screen and (max-width:480px) {
+  /* 주제 */
+  #contact h2 {
+    margin-top:9rem;
+  }
+  /* 부제 */
+  #contact p {
+    padding:0 1.5rem;
+    margin-top:.5rem;
+  }
+  /* 담당자 */
+  #person-in-charge {
+    margin-top:3rem;
+    flex-direction: column;
+    transform: translateX(3%);
+  }
+  #person-in-charge > div:nth-child(2) {
+    margin-top:1rem;
+  }
+  /* 카카오맵 */
+  #map {
+    display: none;
+  }
+}

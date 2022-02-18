@@ -5,10 +5,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes"/>
   <title>신나는 성경탐험</title>
-  <link href="./css/index.css" rel="stylesheet">
   <link href="./css/reset.css" rel="stylesheet">
+  <link href="./css/home.css" rel="stylesheet">
+  <link href="./css/invite.css" rel="stylesheet">
+  <link href="./css/ani.css" rel="stylesheet">
+  <link href="./css/notice.css" rel="stylesheet">
+  <link href="./css/contact.css" rel="stylesheet">
+  <link href="./css/firework.css" rel="stylesheet">
   <script src="./js/index.js" defer></script>
   <script src="./js/slide.js" defer></script>
+  <script src="https://tistory4.daumcdn.net/tistory/3134841/skin/images/confetti_v2.js"></script>
   <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
 </head>
 <body>
@@ -79,6 +85,59 @@
 
 
 
+<!-- ***초대장 -->
+<section id="invite" class="flex flex-direction-column align-items-center relative">
+  <h2>성경탐험에 초대합니다</h2>
+  <div id="letter" class="relative">
+    <!-- 편지지 맨뒤 -->
+    <div id="letter1" class="absolute">
+      <img src="./img/letter_open_1.png" alt="letter_1">
+    </div>
+    <!-- 편지지 중간 -->
+    <div id="letter2" class="absolute">
+      <img src="./img/letter_open_2.png" alt="letter_2">
+    </div>
+    <!-- 편지지 맨앞 -->
+    <div id="letter3" class="absolute">
+      <img src="./img/letter_open_3.png" alt="letter_3">
+    </div>
+    <!-- 클릭시 편지지 팝업 -->
+    <div id="letter-paper" class="absolute">
+      <img src="./img/letter_paper.png" alt="letter-paper">
+      <!-- 팝업 닫기버튼 -->
+      <div id="close-btn" class="absolute">
+        <img src="./img/icon/close_btn.png" alt="close-btn">
+      </div>
+    </div>
+    <!-- 텍스트 -->
+    <div id="letter-text" class="flex flex-direction-column align-items-center text-align-center absolute">
+      <span>누군가로부터 편지가 도착했어요!</span>
+      <!-- 열기 버튼 -->
+      <div id="more-btn" class="flex justify-content-center">
+        <p>열어 보기</p>
+      </div>
+    </div>
+  </div>
+  <!-- 폭죽 -->
+  <div class="pyro absolute">
+    <div class="before"></div>
+    <div class="after"></div>
+  </div>
+</section>
+
+
+
+
+  <!-- ***영상 -->
+  <section id="ani" class="flex flex-direction-column align-items-center">
+    <h2>신나는 성경학교 소개영상</h2>
+    <p>유초등부 선생님들이 직접 더빙한 성경 드라마는 coming soon...</p>
+    <video src="./video/22winter_churchschool.mp4" controls></video>
+  </section>
+
+
+
+
   <!-- ***안내문 -->
   <section id="notice" class="flex justify-content-center align-items-center relative">
     <h2 class="text-indent-9999">성경학교 안내</h2>
@@ -95,79 +154,46 @@
         </div>
       </div>
       <div id="part2" class="flex align-items-center flex-direction-column">
-        <h2>주일은 오프라인 예배</h2>
-        <p>주일 예배는 오프라인 예배로 예정이지만, 상황에 따라 온라인으로 변경될 수 있어요.<br>
-          오프라인 예배시 차량운행은 기존과 같아요.</p>
-        <div id="offline" class="relative">
+        <h2>주일도 온라인 예배</h2>
+        <p>주일은 오프라인 예배로 예정이었지만, 상황이 좋지 않아 온라인으로 변경됐어요.</p>
+        <div id="offline" class="relative hidden">
+          <img src="./img/offline.png" alt="offline">
         </div>
       </div>
       <div id="part3" class="flex align-items-center flex-direction-column">
         <h2>시상 안내</h2>
         <p>성경탐험에 온라인으로 끝까지 열심히 참여한 탐험대원에게는 출석 시상을 해요.<br>성경퀴즈 대회와 영상 소감문을 시상하여 소정의 선물을 드려요!</p>
-        <div id="award" class="relative">
+        <div id="award" class="relative hidden">
+          <img src="./img/gift.png" alt="gift">
         </div>
       </div>
       <div id="part4" class="flex align-items-center flex-direction-column">
         <h2>휴식 시간</h2>
-        <p>각 프로그램 간 5분의 휴식이 있어요.<br>쉴 수 있는 시간을 잘 확인하고, 이후 프로그램에 참여하도록 선생님의 안내를 잘 확인해주세요.</p>
-        <div id="rest" class="relative">
+        <p>프로그램 사이에 5분의 휴식이 있어요.<br>프로그램에 잘 참여할 수 있도록 선생님의 안내를 꼭 들어주세요.</p>
+        <div id="rest" class="relative  hidden">
+          <img src="./img/5minutes.png" alt="5minutes">
         </div>
       </div>
       <div id="part5" class="flex align-items-center flex-direction-column">
         <h2>시간표</h2>
         <p>프로그램이 끝날 때마다 5분의 휴식이 있어요.<br>쉴 수 있는 시간을 잘 확인하고, 선생님의 안내를 따라주세요.</p>
-        <div id="time-table" class="relative">
+        <div id="time-table" class="relative hidden">
+          <img src="./img/timetable.png" alt="timetable">
         </div>
       </div>
     </div>
-    <div id="slide-btn" class="flex absolute space-between">
-      <div id="prev">
+    <!-- 슬라이드 버튼 -->
+    <div id="slide-btn" class="flex relative space-between">
+      <div id="prev" class="absolute">
         <img src="./img/icon/chevron_left.png" alt="prev">
       </div>
-      <div id="next">
+      <div id="next" class="absolute">
         <img src="./img/icon/chevron_right.png" alt="next">
       </div>
     </div>
   </section>
 
 
-
-
-  <!-- ***애니메이션 -->
-  <section id="ani" class="flex flex-direction-column align-items-center">
-    <h2>신나는 성경학교 소개영상</h2>
-    <p>유초등부 선생님들이 직접 더빙한 성경 드라마는 coming soon...</p>
-    <video src="./video/22winter_churchschool.mp4" controls></video>
-  </section>
-
-  <!-- ***초대장 -->
-  <section id="invite" class="flex flex-direction-column align-items-center relative">
-    <h2>성경탐험에 초대합니다</h2>
-    <div id="letter" class="relative">
-      <!-- 편지지 맨뒤 -->
-      <div id="letter1" class="absolute">
-        <img src="./img/letter_open_1.png" alt="letter_1">
-      </div>
-      <div id="letter2" class="absolute">
-        <img src="./img/letter_open_2.png" alt="letter_2">
-      </div>
-      <div id="letter3" class="absolute">
-        <img src="./img/letter_open_3.png" alt="letter_3">
-      </div>
-      <div id="letter-paper" class="absolute">
-        <img src="./img/letter_paper_1.png" alt="letter-paper">
-        <div id="close-btn" class="absolute">
-          <img src="./img/icon/close_btn.png" alt="close-btn">
-        </div>
-      </div>
-      <div id="letter-text" class="flex flex-direction-column align-items-center text-align-center absolute">
-        <span>초대장을 열어 보세요.</span>
-        <div id="more-btn" class="flex justify-content-center">
-          <p>열어 보기</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
 
   <!-- ***문의 -->
@@ -214,9 +240,9 @@
   <!-- ***메뉴*** -->
   <div id="menu" class="fixed flex flex-direction-column space-between">
     <div id="home-btn" class="hidden">홈</div> <!-- 홈 -->
-    <div id="notice-btn" class="hidden">안내</div> <!-- 안내문 -->
-    <div id="ani-btn" class="hidden">영상</div> <!-- 애니메이션 -->
     <div id="letter-btn" class="hidden">초대</div> <!-- 초대장 -->
+    <div id="ani-btn" class="hidden">영상</div> <!-- 애니메이션 -->
+    <div id="notice-btn" class="hidden">안내</div> <!-- 안내문 -->
     <div id="contact-btn" class="hidden">문의</div> <!-- 문의 -->
     <a id="band-btn" class="hidden" href="https://band.us/n/a6a765h5j10ce" target="_blank">밴드</a> <!-- 네이버밴드 -->
   </div>

@@ -51,6 +51,7 @@ body {
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: 300;
   font-size:1.125rem;
+  overflow-x: hidden;
 }
 h2 {
   font-family: 'Jua', sans-serif;
@@ -59,18 +60,211 @@ h2 {
   margin-top:6%;
 }
 
-/* 섹션 */
+/* ***로고 */
+#logo {
+  left:1rem;
+  top:.5rem;
+  font-family: 'Dongle', sans-serif;
+  font-size:2rem;
+  pointer-events: none;
+  z-index: 100;
+}
+
+
+/* ***섹션 */
 section {
   width:100vw;
   height:100vh;
   box-sizing: border-box;
 }
 
+
+/* ***메뉴 */
+#menu {
+  top:50%;
+  right:2%;
+  transform: translate(0, -50%);
+  width:3.75rem;
+  height:30rem;
+  z-index: 100;
+}
+/* 버튼 */
+#menu > div, #menu > a {
+  width:3.75rem;
+  height:3.75rem;
+  line-height: 3.75rem;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: rgba(213, 181, 134, .7);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, .22), -4px -4px 4px rgba(255, 255, 255, .22);
+  transition: .3s;
+  text-indent: 4.75rem;
+  font-family: 'Jua', sans-serif;
+  color:#fafafa;
+  text-decoration: none;
+}
+/* 버튼 호버 */
+#menu > div:hover, #menu > a:hover {
+  width:6.2rem;
+  border-radius: 3.75rem;
+  transform: translateX(-2.5rem);
+  text-indent: 3.5rem;
+  background-color: #35250f;
+}
+#menu > div:nth-child(1):hover {
+  text-indent: 4rem;
+}
+/* 버튼 아이콘 이미지 */
+#menu div div {
+  width:3.75rem;
+  height:3.75rem;
+}
+/* 홈 버튼 */
+#home-btn {
+  background:url(../img/icon/icon_home.png) no-repeat 0 50% / 3.75rem;
+}
+/* 초대 버튼 */
+#letter-btn {
+  background: url(../img/icon/icon_letter.png) no-repeat 0 50% / 3.75rem;
+}
+/* 영상 버튼 */
+#ani-btn {
+  background: url(../img/icon/icon_ani.png) no-repeat 0 50% / 3.75rem;
+}
+/* 안내 버튼 */
+#notice-btn {
+  background: url(../img/icon/icon_notice.png) no-repeat 0 50% / 3.75rem;
+}
+/* 문의 버튼 */
+#contact-btn {
+  background: url(../img/icon/icon_contact.png) no-repeat 0 50% / 3.75rem;
+}
+/* 밴드 버튼 */
+#band-btn {
+  background: url(../img/icon/icon_band.png) no-repeat 0 50% / 3.75rem;
+}
+
+
+/* ***미디어쿼리 */
 @media screen and (max-width:1024px) {
+  /* 바디 */
   body {
     font-size: .875rem;
   }
+  /* h2 주제 */
   h2 {
     font-size:2rem;
+    transform: translateY(15%);
+    margin-top:9rem;
+  }
+  p {
+    margin-top:1rem;
+  }
+  
+  /* 메뉴 */
+  #menu {
+    flex-direction: row;
+    top:94%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    height:3.75rem;
+    width:28rem;
+    z-index: 100;
+  }
+  /* 메뉴 호버 */
+  #menu > div:hover, #menu > a:hover {
+    width:3.75rem;
+    transform: translateX(0);
+    text-indent: 5rem;
+  }
+}
+
+/* ***미디어쿼리 */
+/* 768px */
+@media screen and (max-width:768px) {
+  /* h2 주제 */
+  h2 {
+    font-size:1.75rem;
+    transform: translateY(15%);
+    margin-top:9rem;
+  }
+  p {
+    margin-top:.5rem;
+  }
+  
+  /* 메뉴 */
+  #menu {
+    flex-direction: row;
+    top:94%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    height:3.75rem;
+    width:28rem;
+  }
+  /* 메뉴 호버 */
+  #menu > div:hover, #menu > a:hover {
+    width:3.75rem;
+    transform: translateX(0);
+    text-indent: 5rem;
+  }
+}
+
+/* 480px */
+@media screen and (max-width:480px) {
+  /* 로고 */
+  #logo {
+    font-size:1.5rem;
+  }
+  /* h2 주제 */
+  h2 {
+    font-size:1.75rem;
+    transform: translateY(15%);
+    margin-top:9rem;
+  }
+  p {
+    margin-top:.5rem;
+  }
+  /* 메뉴 */
+  #menu {
+    flex-direction: row;
+    top:94%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    height:3.75rem;
+    width:20rem;
+    z-index: 100;
+  }
+  /* 메뉴 버튼 */
+  #menu > div, #menu > a {
+    width:2.5rem;
+    height:2.5rem;
+  }
+  /* 메뉴 호버 */
+  #menu > div:hover, #menu > a:hover {
+    width:2.5rem;
+  }
+  /* 홈 버튼 */
+  #home-btn {
+    background:url(../img/icon/icon_home.png) no-repeat 0 50% / 2.5rem;
+  }
+  /* 초대 버튼 */
+  #letter-btn {
+    background: url(../img/icon/icon_letter.png) no-repeat 0 50% / 2.5rem;
+  }
+  /* 영상 버튼 */
+  #ani-btn {
+    background: url(../img/icon/icon_ani.png) no-repeat 0 50% / 2.5rem;
+  }
+  /* 안내 버튼 */
+  #notice-btn {
+    background: url(../img/icon/icon_notice.png) no-repeat 0 50% / 2.5rem;
+  }
+  /* 문의 버튼 */
+  #contact-btn {
+    background: url(../img/icon/icon_contact.png) no-repeat 0 50% / 2.5rem;
+  }
+  /* 밴드 버튼 */
+  #band-btn {
+    background: url(../img/icon/icon_band.png) no-repeat 0 50% / 2.5rem;
   }
 }

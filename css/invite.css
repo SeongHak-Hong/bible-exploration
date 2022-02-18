@@ -1,0 +1,143 @@
+/* ***초대장 섹션 */
+#invite {
+  background-color: rgb(255, 217, 161);
+}
+/* 편지 영역 */
+#letter {
+  width:100%;
+  height:100%;
+}
+
+
+
+/* 편지 이미지 박스 */
+#letter > div {
+  width: 37.5rem;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+}
+/* 편지 이미지 */
+#letter1 img, #letter2 img, #letter3 img, #letter-paper img {
+  width:100%;
+  pointer-events: none;
+}
+#letter div:nth-child(3) {
+  pointer-events: none;
+}
+/* 편지지 애니메이션(반복) */
+.letter2-ani {
+  animation: letter .5s infinite alternate;
+}
+@keyframes letter {
+  0% {
+  }
+  100% {
+    transform: translateY(1rem);
+  }
+}
+/* 편지지 애니메이션(열어보기 클릭시) */
+.letter2-open {
+  animation: open .8s;
+}
+@keyframes open {
+  0% {
+
+  }
+  100% {
+    transform: translateY(-3rem);
+  }
+}
+
+
+
+/* 편지 클릭 텍스트 */
+#letter div:nth-child(5) {
+  top:25%;
+}
+#letter-text div {
+  width:100%;
+}
+#letter-text div p {
+  margin: 1rem .5rem 0;
+  width:8rem;
+  height:2rem;
+  line-height: 2rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  background-color: #d1dced;
+  font-weight: 400;
+  transition: .3s;
+}
+#letter-text div p:hover {
+  background-color: #bbcfee;
+}
+
+
+
+/* 닫기 버튼 */
+#close-btn {
+  right: -1rem;
+  top:2rem;
+  width:2rem;
+  height:2rem;
+  cursor: pointer;
+  
+}
+#close-btn img {
+  width:1.5rem;
+  transition: .3s;
+}
+#close-btn:hover img {
+  transform:rotate(90deg);
+}
+
+
+
+/* 폭죽 */
+.pyro {
+  width:100vw;
+  top:5%;
+  display: none;
+  opacity: .8;
+}
+
+
+
+@media screen and (max-width:1024px) {
+  /* 편지 박스 */
+  #letter > div {
+    width: 32.5rem;
+    transform: translate(-50%,-55%);
+  }
+  /* 편지 클릭 텍스트 */
+  #letter div:nth-child(5) {
+    top:30%;
+  }
+}
+
+
+@media screen and (max-width:480px) {
+  /* 편지 박스 */
+  #letter > div {
+    width: 20rem;
+    transform: translate(-50%,-65%);
+  }
+  /* 편지 클릭 텍스트 */
+  #letter div:nth-child(5) {
+    top:30%;
+  }
+  /* 편지 버튼 */
+  #letter-text div p {
+    width:7rem;
+  }
+  /* 닫기 버튼 */
+  #close-btn {
+    right: -1.5rem;
+    top:1.5rem;
+  }
+  #close-btn img {
+    width:1rem;
+    transition: .3s;
+  }
+}
