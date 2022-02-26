@@ -260,13 +260,13 @@
 }
 /* 사람 */
 #person1, #person2 {
-  width:100%;
+  height:100%;
   z-index: 7;
   pointer-events: none;
   bottom:0;
 }
 #person1 img, #person2 img {
-  width:100%;
+  height: 100%;
 }
 
 
