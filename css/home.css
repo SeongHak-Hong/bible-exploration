@@ -263,6 +263,7 @@
   height:100%;
   z-index: 7;
   pointer-events: none;
+  left:0;
   bottom:0;
 }
 #person1 img, #person2 img {
@@ -299,5 +300,12 @@
   #title-wrap p:nth-of-type(2) {
     width:18rem;
     font-size: .875rem;
+  }
+  /* 사람 */
+  #person1, #person2 {
+    height:50%;
+  }
+  #person1 {
+    left:-66%;
   }
 }

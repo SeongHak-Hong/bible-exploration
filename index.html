@@ -10,9 +10,12 @@
   <link href="./css/invite.css" rel="stylesheet">
   <link href="./css/ani.css" rel="stylesheet">
   <link href="./css/notice.css" rel="stylesheet">
+  <link href="./css/contest.css" rel="stylesheet">
   <link href="./css/contact.css" rel="stylesheet">
   <link href="./css/firework.css" rel="stylesheet">
   <script src="./js/index.js" defer></script>
+  <script src="./js/invite.js" defer></script>
+  <script src="./js/contest.js" defer></script>
   <script src="./js/slide.js" defer></script>
   <script src="https://tistory4.daumcdn.net/tistory/3134841/skin/images/confetti_v2.js"></script>
   <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
@@ -196,8 +199,93 @@
 
 
 
+  <!-- ***전시/콘테스트 -->
+  <section id="contest" class="flex relative align-items-center flex-direction-column">
+    <h2>전도키트 만들기 작품 전시회</h2>
+    <p class="text-align-center">아래의 이름을 클릭하면 친구들의 작품이 나와요.</p>
+    <!-- 갤러리 -->
+    <div id="gallery" class="hidden">
+      <ul class="relative">
+        <li>
+          <img src="./img/contest/lia.jpg" alt="lia">
+        </li>
+        <li>
+          <img src="./img/contest/minki.jpg" alt="minki">
+        </li>
+        <li>
+          <img src="./img/contest/seungmin.jpg" alt="seungmin">
+        </li>
+        <li>
+          <img src="./img/contest/junki.jpg" alt="junki">
+        </li>
+        <li>
+          <img src="./img/contest/taehee.jpg" alt="taehee">
+        </li>
+        <li>
+          <img src="./img/contest/munhyun.jpg" alt="munhyun">
+        </li>
+        <li>
+          <img src="./img/contest/sieun.jpg" alt="sieun">
+        </li>
+        <li>
+          <img src="./img/contest/cheonyu.jpg" alt="cheonyu">
+        </li>
+        <li>
+          <img src="./img/contest/gangwoo.jpg" alt="gangwoo">
+        </li>
+        <li>
+          <img src="./img/contest/siwoo.jpg" alt="siwoo">
+        </li>
+        <li>
+          <img src="./img/contest/geunyoung.jpg" alt="geunyoung">
+        </li>
+        <li>
+          <img src="./img/contest/siyoung.jpg" alt="siyoung">
+        </li>
+        <li>
+          <img src="./img/contest/yeongsang.jpg" alt="yeongsang">
+        </li>
+        <li>
+          <img src="./img/contest/younghyun.jpg" alt="younghyun">
+        </li>
+      </ul>
+    </div>
+    <!-- 이름 목록 -->
+    <ul id="friends" class="flex">
+      <li>김리아</li>
+      <li>김민기</li>
+      <li>김승민</li>
+      <li>김준기</li>
+      <li>김태희</li>
+      <li>문 현</li>
+      <li>박시은</li>
+      <li>박천유</li>
+      <li>안강우</li>
+      <li>안시우</li>
+      <li>오근영</li>
+      <li>오시영</li>
+      <li>유영상</li>
+      <li>조영현</li>
+      <li></li>
+    </ul>
+    <!-- 투표 버튼 -->
+    <div id="vote-btn" class="flex justify-content-center">
+      <p class="flex justify-content-center">투표하기</p>
+    </div>
+    <!-- 투표 창 -->
+    <div id="modal" class="absolute">
+      <iframe src="http://2pyo.in/n5OCvG"></iframe>
+      <div id="modal-close" class="absolute">
+        <img src="./img/icon/close_btn.png" alt="close-btn">
+      </div>
+    </div>
+  </section>
+
+
+
+
   <!-- ***문의 -->
-  <section id="contact" class="flex align-items-center flex-direction-column hidden">
+  <section id="contact" class="flex align-items-center flex-direction-column">
     <h2>궁금하신 사항은 연락주세요</h2>
     <p class="text-align-center">오른쪽의 네이버밴드 아이콘을 누르면 유초등부의 다양한 소식을 볼 수 있어요!</p>
     <!-- 담당자 -->
@@ -243,8 +331,9 @@
     <div id="letter-btn" class="hidden">초대</div> <!-- 초대장 -->
     <div id="ani-btn" class="hidden">영상</div> <!-- 애니메이션 -->
     <div id="notice-btn" class="hidden">안내</div> <!-- 안내문 -->
+    <div id="contest-btn" class="hidden">전시</div> <!-- 전시 -->
     <div id="contact-btn" class="hidden">문의</div> <!-- 문의 -->
-    <a id="band-btn" class="hidden" href="https://band.us/n/a6a765h5j10ce" target="_blank">밴드</a> <!-- 네이버밴드 -->
+    <a id="band-btn" class="hidden" href="https://band.us/band/75418418" target="_blank">밴드</a> <!-- 네이버밴드 -->
   </div>
 
 
