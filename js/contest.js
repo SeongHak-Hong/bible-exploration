@@ -46,8 +46,10 @@ modalClose.addEventListener('click', function(){
 });
 
 
-// ***모바일(max-width:768)일 때 iframe 없애기
-const modalIframe = document.querySelector('#modal iframe');
-if (document.body.offsetWidth <= 768) {
-  modal.removeChild(modalIframe);
+// ***width:481이상 일 때 iframe 생성
+if (document.body.offsetWidth >= 481) {
+  const modalIframe = document.createElement('iframe');
+  modal.appendChild(modalIframe);
+  modalIframe.src = "https://2pyo.in/n5OCvG";
+  modalIframe.target = "_self";
 }
