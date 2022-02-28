@@ -109,17 +109,15 @@
   #next, #prev {
     top:45%;
   }
+  /* 이전버튼 */
   #prev {
     left:4%;
   }
+  /* 다음버튼 */
   #next {
     right:4%;
   }
-  /* 타이틀 */
-  #slide-ul h2 {
-    transform: translateY(15%);
-    margin-top:9rem;
-  }
+  /* 부제 */
   #slide-ul p {
     margin-top:1rem;
   }
@@ -160,7 +158,6 @@
   /* 태블릿 */
   #monitor {
     width:18rem;
-    margin-top:3rem;
   }
   /* 파트1 qr코드 */
   #qr {

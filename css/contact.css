@@ -2,10 +2,6 @@
 #contact {
   background-color: #FFE3BA;
 }
-/* 제목 */
-#contact h2 {
-  margin-top:5%;
-}
 /* 담당자 */
 #person-in-charge {
   width:48rem;
@@ -82,10 +78,6 @@
 
 
 @media screen and (max-width:480px) {
-  /* 주제 */
-  #contact h2 {
-    margin-top:9rem;
-  }
   /* 부제 */
   #contact p {
     padding:0 1.5rem;
