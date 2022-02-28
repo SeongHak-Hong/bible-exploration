@@ -35,9 +35,6 @@
   cursor: pointer;
   text-align: center;
 }
-#friends li:last-child {
-  pointer-events: none;
-}
 /* 친구 리스트 호버 */
 #friends li:hover {
   font-weight: 600;
