@@ -53,5 +53,5 @@ if (document.body.offsetWidth >= 481) {
   modal.appendChild(modalIframe);
   modalIframe.src = "https://surveyjs.io/published?id=2c48c97e-4ec5-4bb4-8442-0d694bac9f91";
   modalIframe.target = "_self";
-  modalIframe.style.backgroundColor = "#8a8a8a";
+  modalIframe.style.backgroundColor = "#b3b3b3";
 }
