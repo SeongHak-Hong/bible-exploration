@@ -76,7 +76,7 @@
 }
 
 /* 투표 버튼 */
-#vote-btn p {
+#vote-btn1 p, #vote-btn2 a {
   margin: 2rem .5rem 0;
   width:8rem;
   height:2rem;
@@ -86,13 +86,14 @@
   background-color: rgba(213, 181, 134, .7);
   font-weight: 400;
   transition: .3s;
+  text-decoration: none;
+  color:#35250f;
 }
 /* 투표 버튼 호버 */
-#vote-btn p:hover {
+#vote-btn1 p:hover, #vote-btn2 a:hover {
   background-color: #35250f;
   color:#fff;
 }
-
 
 @media screen and (max-width:480px) {
   /* 갤러리 */
@@ -113,8 +114,15 @@
   #modal {
     width:70%;
   }
-  /* 투표 버튼 */
-  #vote-btn p {
+  /* 투표 버튼(pc) */
+  #vote-btn1 {
+    display: none;
+  }
+  /* 투표 버튼(mobile) */
+  #vote-btn2 {
+    display: flex;
+  }
+  #vote-btn2 a {
     margin: 1.5rem .5rem 0;
   }
 }

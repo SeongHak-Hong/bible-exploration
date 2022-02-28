@@ -206,73 +206,77 @@
     <!-- 갤러리 -->
     <div id="gallery" class="hidden">
       <ul class="relative">
-        <li>
+        <li data-gallery="0">
           <img src="./img/contest/lia.jpg" alt="lia">
         </li>
-        <li>
+        <li data-gallery="1">
           <img src="./img/contest/minki.jpg" alt="minki">
         </li>
-        <li>
+        <li data-gallery="2">
           <img src="./img/contest/seungmin.jpg" alt="seungmin">
         </li>
-        <li>
+        <li data-gallery="3">
           <img src="./img/contest/junki.jpg" alt="junki">
         </li>
-        <li>
+        <li data-gallery="4">
           <img src="./img/contest/taehee.jpg" alt="taehee">
         </li>
-        <li>
+        <li data-gallery="5">
           <img src="./img/contest/munhyun.jpg" alt="munhyun">
         </li>
-        <li>
+        <li data-gallery="6">
           <img src="./img/contest/sieun.jpg" alt="sieun">
         </li>
-        <li>
+        <li data-gallery="7">
           <img src="./img/contest/cheonyu.jpg" alt="cheonyu">
         </li>
-        <li>
+        <li data-gallery="8">
           <img src="./img/contest/gangwoo.jpg" alt="gangwoo">
         </li>
-        <li>
+        <li data-gallery="9">
           <img src="./img/contest/siwoo.jpg" alt="siwoo">
         </li>
-        <li>
+        <li data-gallery="10">
           <img src="./img/contest/geunyoung.jpg" alt="geunyoung">
         </li>
-        <li>
+        <li data-gallery="11">
           <img src="./img/contest/siyoung.jpg" alt="siyoung">
         </li>
-        <li>
+        <li data-gallery="12">
           <img src="./img/contest/yeongsang.jpg" alt="yeongsang">
         </li>
-        <li>
+        <li data-gallery="13">
           <img src="./img/contest/younghyun.jpg" alt="younghyun">
         </li>
       </ul>
     </div>
     <!-- 이름 목록 -->
     <ul id="friends" class="flex">
-      <li>김리아</li>
-      <li>김민기</li>
-      <li>김승민</li>
-      <li>김준기</li>
-      <li>김태희</li>
-      <li>문 현</li>
-      <li>박시은</li>
-      <li>박천유</li>
-      <li>안강우</li>
-      <li>안시우</li>
-      <li>오근영</li>
-      <li>오시영</li>
-      <li>유영상</li>
-      <li>조영현</li>
-      <li></li>
+      <li data-friends="0">김리아</li>
+      <li data-friends="1">김민기</li>
+      <li data-friends="2">김승민</li>
+      <li data-friends="3">김준기</li>
+      <li data-friends="4">김태희</li>
+      <li data-friends="5">문 현</li>
+      <li data-friends="6">박시은</li>
+      <li data-friends="7">박천유</li>
+      <li data-friends="8">안강우</li>
+      <li data-friends="9">안시우</li>
+      <li data-friends="10">오근영</li>
+      <li data-friends="11">오시영</li>
+      <li data-friends="12">유영상</li>
+      <li data-friends="13">조영현</li>
+      <li data-friends="14"></li>
     </ul>
-    <!-- 투표 버튼 -->
-    <div id="vote-btn" class="flex justify-content-center">
+    <!-- 투표 버튼(pc) -->
+    <div id="vote-btn1" class="flex justify-content-center">
       <p class="flex justify-content-center">투표하기</p>
     </div>
-    <!-- 투표 창 -->
+    <!-- 투표 버튼(mobile) -->
+    <div id="vote-btn2" class="none justify-content-center">
+      <a id="vote-site" class="flex justify-content-center" href="https://2pyo.in/n5OCvG">투표하기</a>
+    </div>
+    <!-- 투표 창(pc - modal) -->
     <div id="modal" class="absolute">
       <iframe src="https://2pyo.in/n5OCvG" target="_self"></iframe>
       <div id="modal-close" class="absolute">
