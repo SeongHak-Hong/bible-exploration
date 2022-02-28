@@ -44,3 +44,10 @@ modalClose.addEventListener('click', function(){
   modal.style.opacity = "0";
   modal.style.zIndex = "-1";
 });
+
+
+// ***모바일(max-width:480)일 때 iframe 없애기
+const modalIframe = document.querySelector('#modal iframe');
+if (document.body.offsetWidth <= 480) {
+  modal.removeChild(modalIframe);
+}
