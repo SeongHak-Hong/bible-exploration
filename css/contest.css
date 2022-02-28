@@ -87,11 +87,11 @@
   line-height: 2rem;
   border-radius: 2rem;
   cursor: pointer;
-  background-color: rgba(213, 181, 134, .7);
   font-weight: 400;
   transition: .3s;
   text-decoration: none;
-  color:#35250f;
+  background-color: #35250fd7;
+  color:#fff;
 }
 /* 투표 버튼 호버 */
 #vote-btn1 p:hover, #vote-btn2 a:hover {

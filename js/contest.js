@@ -49,7 +49,9 @@ modalClose.addEventListener('click', function(){
 // ***width:481이상 일 때 iframe 생성
 if (document.body.offsetWidth >= 481) {
   const modalIframe = document.createElement('iframe');
+
   modal.appendChild(modalIframe);
-  modalIframe.src = "https://2pyo.in/n5OCvG";
+  modalIframe.src = "https://surveyjs.io/published?id=2c48c97e-4ec5-4bb4-8442-0d694bac9f91";
   modalIframe.target = "_self";
+  modalIframe.style.backgroundColor = "#8a8a8a";
 }
