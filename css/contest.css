@@ -33,6 +33,7 @@
 #friends li {
   margin: 0 1rem;
   cursor: pointer;
+  text-align: center;
 }
 #friends li:last-child {
   pointer-events: none;
