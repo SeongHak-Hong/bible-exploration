@@ -129,6 +129,7 @@
   #offline, #award, #rest, #time-table {
     width:36.875rem;
     height:24.625rem;
+    margin-top:1rem;
   }
   /* qr코드 */
   #qr {
@@ -178,13 +179,6 @@
   #offline, #award, #rest, #time-table {
     width:16rem;
     height:11rem;
-    margin-top:5rem;
-  }
-  #offline {
-    margin-top:6rem;
-  }
-  #award {
-    margin-top:4rem;
   }
   /* 다음, 이전 버튼 */
   #next, #prev {

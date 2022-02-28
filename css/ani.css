@@ -10,13 +10,11 @@
 @media screen and (max-width:1024px) {
   #ani video {
     width:40rem;
-    margin-top:9%;
   }
 }
 
 @media screen and (max-width:480px) {
   #ani video {
     width:22rem;
-    margin-top:25%;
   }
 }
