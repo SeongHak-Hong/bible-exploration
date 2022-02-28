@@ -46,8 +46,8 @@ modalClose.addEventListener('click', function(){
 });
 
 
-// ***모바일(max-width:480)일 때 iframe 없애기
+// ***모바일(max-width:768)일 때 iframe 없애기
 const modalIframe = document.querySelector('#modal iframe');
-if (document.body.offsetWidth <= 480) {
+if (document.body.offsetWidth <= 768) {
   modal.removeChild(modalIframe);
 }
