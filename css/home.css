@@ -266,10 +266,20 @@
   left:0;
   bottom:0;
 }
+/* 사람 이미지 */
 #person1 img, #person2 img {
   height: 100%;
 }
 
+
+
+/* ***미디어쿼리 */
+@media screen and (max-width:1440px) {
+  /* 사람1 */
+  #person1 {
+    left: -22%;
+  }
+}
 
 
 @media screen and (max-width:1024px) {
@@ -285,7 +295,28 @@
   #title-wrap p:nth-of-type(2) {
     font-size: .875rem;
   }
+  /* 사람1 */
+  #person1 {
+    left: -30%;
+  }
+  /* 사람 이미지 */
+  #person1 img, #person2 img {
+    height: 90%;
+  }
 }
+
+
+@media screen and (max-width:768px) {
+  /* 사람1 */
+  #person1 {
+    left: -80%;
+  }
+  /* 사람 이미지 */
+  #person1 img, #person2 img {
+    height: 70%;
+  }
+}
+
 
 @media screen and (max-width:480px) {
   /* 주제 */

@@ -106,7 +106,20 @@
 @media screen and (max-width:1024px) {
   /* 편지 박스 */
   #letter > div {
-    width: 32.5rem;
+    width: 25.5rem;
+    transform: translate(-50%,-55%);
+  }
+  /* 편지 클릭 텍스트 */
+  #letter div:nth-child(5) {
+    top:30%;
+  }
+}
+
+
+@media screen and (max-width:768px) {
+  /* 편지 박스 */
+  #letter > div {
+    width: 32rem;
     transform: translate(-50%,-55%);
   }
   /* 편지 클릭 텍스트 */

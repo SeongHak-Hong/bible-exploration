@@ -149,6 +149,7 @@ section {
 
 
 /* ***미디어쿼리 */
+/* 1024px */
 @media screen and (max-width:1024px) {
   /* 바디 */
   body {
@@ -162,15 +163,14 @@ section {
   p {
     margin-top:1rem;
   }
-  /* 메뉴 */
+   /* 메뉴 */
   #menu {
     flex-direction: row;
-    top:94%;
+    top:92%;
     left:50%;
     transform: translate(-50%, -50%);
     height:3.75rem;
-    width:28rem;
-    z-index: 100;
+    width:60%;
   }
   /* 메뉴 호버 */
   #menu > div:hover, #menu > a:hover {
@@ -180,32 +180,21 @@ section {
   }
 }
 
-/* ***미디어쿼리 */
+
 /* 768px */
 @media screen and (max-width:768px) {
   /* 주제 */
   h2 {
-    font-size:1.75rem;
+    font-size:2.75rem;
   }
   /* 부제 */
   p {
     margin-top:.5rem;
+    font-size: 1rem;
   }
-  
   /* 메뉴 */
   #menu {
-    flex-direction: row;
-    top:94%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    height:3.75rem;
-    width:28rem;
-  }
-  /* 메뉴 호버 */
-  #menu > div:hover, #menu > a:hover {
-    width:3.75rem;
-    transform: translateX(0);
-    text-indent: 5rem;
+    width:80%;
   }
 }
 

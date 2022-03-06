@@ -96,6 +96,18 @@
   color:#fff;
 }
 
+
+
+
+/* ***미디어쿼리 */
+@media screen and (max-width:1024px) {
+  /* 친구목록 */
+  #friends {
+    width:55%;
+    flex-wrap: wrap;
+  }
+}
+
 @media screen and (max-width:480px) {
   /* 갤러리 */
   #gallery {
