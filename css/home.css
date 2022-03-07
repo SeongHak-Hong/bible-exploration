@@ -336,8 +336,9 @@
   #person1, #person2 {
     height:50%;
   }
+  /* 사람1 */
   #person1 {
-    left:-66%;
+    left:-12%;
   }
   /* 구름 KEYFRAMES */
   @-webkit-keyframes animateCloud {

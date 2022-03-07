@@ -2,19 +2,26 @@
 #ani {
   background-color: #FFE3BA;
 }
+/* 영상 */
 #ani video {
   width:60rem;
   margin-top:3rem;
 }
 
 @media screen and (max-width:1024px) {
+  /* 영상 */
   #ani video {
     width:40rem;
   }
 }
 
 @media screen and (max-width:480px) {
+  /* 영상 */
   #ani video {
     width:22rem;
+  }
+  /* 부제 */
+  #ani p {
+    width:90%;
   }
 }
